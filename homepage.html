@@ -1,26 +1,601 @@
 <head>
-    <link rel="stylesheet" href="./homepage.css"></link>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./homepage.css"></link>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <h3>Welcome to the Laboratory of Functional and Quantitative Proteomics!</h3>
-    <div id="hexGrid" style="float: left; width: 400px;">
-        <div class="hex-row">
-            <div style="opacity: 0" class="hex"><div class="top" style="border-bottom: 30px solid orange;"></div><div style="background: orange;" class="middle">Hi I'm Hidden</div><div class="bottom" style="border-top: 30px solid orange;"></div></div>
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #22A99D;"></div><div style = "background: #22A99D;" class="middle">Dr. Yue Chen</div><div class="bottom" style="border-top: 30px solid #22A99D;"></div></div>
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #4D72B1;"></div><div style="background: #4D72B1;" class="middle">Publications</div><div class="bottom"  style="border-top: 30px solid #4D72B1;"></div></div>
+  <h3>Welcome to the Laboratory of Functional and Quantitative Proteomics!</h3>
+  <div id="hexGrid" style="float: left; width: 400px;">
+    <div class="hex-row">
+      <div class="hex" style="opacity: 0; cursor:default" >
+        <div class="top" style="border-bottom: 30px solid orange;"></div>
+        <div style="background: orange;" class="middle">Hi I'm Hidden</div>
+        <div class="bottom" style="border-top: 30px solid orange;"></div>
+      </div>
+
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #22A99D;"></div>
+        <div style="background: #22A99D;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Dr.YueChen">Dr. Yue Chen</button>
         </div>
-        <div id="evenRow" class="hex-row even">
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #3498C8;"></div><div style="background: #3498C8;" class="middle">Contact Us</div><div class="bottom"  style="border-top: 30px solid #3498C8;"></div></div>
-            <div class="middle_hex"><div class="top" style="border-bottom: 30px solid #eeeeee;"></div><div style="background: #eeeeee;" class="middle" id="centercenterHex">We develop functional proteomics technology to discover novel posttranslational modification pathways and regulatory mechanisms in cells and diseases.</div><div class="bottom"  style="border-top: 30px solid #eeeeee;"></div></div>
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #8CC84D;"></div><div style="background: #8CC84D;" class="middle">Research</div><div class="bottom"  style="border-top: 30px solid #8CC84D;"></div></div>
+        <div class="bottom" style="border-top: 30px solid #22A99D;"></div>
+      </div>
+
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #4D72B1;"></div>
+        <div style="background: #4D72B1;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Publications">Publications</button>
         </div>
-        <div class="hex-row">
-            <div style="opacity: 0" class="hex"><div class="top" style="border-bottom: 30px solid lime;"></div><div style="background: lime;" class="middle">Hi I'm Hidden</div><div class="bottom"  style="border-top: 30px solid lime;"></div></div>
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #A7DEE8;"></div><div style="background: #A7DEE8;" class="middle">Members</div><div class="bottom"  style="border-top: 30px solid #A7DEE8;"></div></div>
-            <div class="hex"><div class="top" style="border-bottom: 30px solid #9AB4CC;"></div><div style="background: #9AB4CC;" class="middle">News and Updates</div><div class="bottom"  style="border-top: 30px solid #9AB4CC;"></div></div>
-        </div> 
+        <div class="bottom" style="border-top: 30px solid #4D72B1;"></div>
+      </div>
     </div>
+
+    <div id="evenRow" class="hex-row even">
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #3498C8;"></div>
+        <div style="background: #3498C8;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ContactUs">Contact Us</button>
+        </div>
+        <div class="bottom" style="border-top: 30px solid #3498C8;"></div>
+      </div>
+
+      <div class="middle_hex" style="pointer-events: none; cursor: default">
+        <div class="top" style="border-bottom: 30px solid #eeeeee;"></div>
+        <div style="background: #eeeeee;" class="middle" id="centercenterHex">
+          We develop functional proteomics technology to discover novel posttranslational modification pathways and regulatory mechanisms in cells and diseases.
+        </div>
+        <div class="bottom" style="border-top: 30px solid #eeeeee;"></div>
+      </div>
+
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #8CC84D;"></div>
+        <div style="background: #8CC84D;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Research">Research</button>
+        </div>
+        <div class="bottom" style="border-top: 30px solid #8CC84D;"></div>
+      </div>
+    </div>
+
+    <div class="hex-row">
+      <div style="opacity: 0;cursor: default" class="hex" opacity:="">
+        <div class="top" style="border-bottom: 30px solid lime;"></div>
+        <div style="background: lime;" class="middle">Hi I'm Hidden</div>
+        <div class="bottom" style="border-top: 30px solid lime;"></div>
+      </div>
+
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #A7DEE8;"></div>
+        <div style="background: #A7DEE8;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#Members">Members</button>
+        </div>
+        <div class="bottom" style="border-top: 30px solid #A7DEE8;"></div>
+      </div>
+
+      <div class="hex">
+        <div class="top" style="border-bottom: 30px solid #9AB4CC;"></div>
+        <div style="background: #9AB4CC;" class="middle">
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#New&Updates">News and Updates</button>
+        </div>
+        <div class="bottom" style="border-top: 30px solid #9AB4CC;"></div>
+      </div>
+    </div> 
+</div>
+  <!--       MODALS       -->
+
+  <!-- Dr. Yue Chen -->
+  <div class="modal fade" id="Dr.YueChen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Dr. Yue Chen</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            PUT INFO HERE
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- Publications -->
+  <div class="modal fade" id="Publications" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Publications</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container overflow-hidden">
+            <div class="row row-cols-1 gy-5">
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2023</h5>
+                  <p>
+                    Nelson, S.L., Li, Y., Chen, Y. and Deshmukh, L. “Avidity-based method for the efficient generation of monoubiquitinated recombinant proteins.” <b>Journal of the American Chemical Society</b> (in press)<br>
+                  </p>
+                  <p>
+                    Gao, J., Sheng, X., Du, J., Zhang, D., Han, C., Chen, Y., Wang, C. and Zhao, Y. “Identification of 113 new histone marks by CHiMA, a tailored database search strategy” <b>Science Advances</b> (in press)
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2022</h5>
+                  <p>
+                    Shibamura-Fujiogi, M., Wang, X., Maisat, W., Koutsogiannaki, S., Li, Y., Chen, Y., Lee, J.C. and Yuki, K. " GltS regulates biofilm formation in methicillin-resistant Staphylococcus aureus" <b>Communications Biology</b> 5, 1284 (2022).<br>
+                  </p>
+                  <p>
+                    Hou, L., Voit, R.A., Shibamura-Fujiogi, A., Koutsogiannaki, S., Li, Y., Chen, Y., Luo, H., Sankaran, V.G. and Yuki, K. "CD11c regulates neutrophil maturation" <b>Blood Advances</b> (in press).<br>
+                  </p>
+                  <p>
+                    Gong, Y., Behera, G., Erber, L., Luo, A. and Chen, Y. "HypDB: A Functionally Annotated Web-based Database of the Proline Hydroxylation Proteome" <b>PLoS Biology</b> 20(8): e3001757 (2022).<br>
+                  </p>
+                  <p>
+                    Gong, Y., Chen, Y. <i>UbE3-APA: A Bioinformatic Strategy to Elucidate Ubiquitin E3 Ligase Activities in Quantitative Proteomics Study.</i> <b>Bioinformatics</b> 38 (8): 2211-2218 (2022).<br>
+                  </p>
+                  <p>
+                    Erber, L., Liu, S., Gong, Y., Tran, P., Chen, Y. <i>Quantitative Proteome and Transcriptome Dynamics Analysis Reveals Iron Deficiency Response Networks and Signature in Neuronal Cells.</i> <b>Molecules</b> 27(2) (2022).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2021</h5>
+                  <p>
+                    Erber, L. and Chen, Y. <i>Functional Proteomics</i> <b>ACS In-Focus eBook Series</b>, American Chemical Society (ISBN 9780841299245)(DOI: 10.1021/acsinfocus.7e5010)<br>
+                  </p>
+                  <p>
+                    Erber, L. N., Luo, A., Gong, Y., Beeson, M., Tu, M., Tran, P., Chen, Y. <i>Iron Deficiency Reprograms Phosphorylation Signaling and Reduces O-GlcNAc Pathways in Neuronal Cells.</i> <b>Nutrients</b> 13(1) (2021).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2020</h5>
+                  <p>
+                    Wu, Z. L., Luo, A., Grill, A., Lao, T., Zou, Y., Chen, Y. <i>Fluorescent Detection of O-GlcNAc via Tandem Glycan Labeling.</i> <b>Bioconjug Chem</b> 31(9): 2098-2102 (2020).<br>
+                  </p>
+                  <p>
+                    Luo, A., Gong, Y., Kim, H., Chen, Y. <i>Proteome dynamics analysis identifies functional roles of SDE2 and hypoxia in DNA damage response in prostate cancer cells.</i> <b>NAR Cancer</b>. 2(2): zcaa010 (2020).<br>
+                  </p>
+                  <p>
+                    Seiler, C.L., Song, J.M., Kotandeniya, D., Chen, J., Kono, T.J.Y., Han, Q., Colwell, M., Auch, B., Sarver, A.L., Upadhyaya, P., Ren, Y., Faulk, C., De Flora, S., La Maestra, S., Chen, Y., Kassie, F., Tretyakova, N.Y. <i>Inhalation exposure to cigarette smoke and inflammatory agents induces epigenetic changes in the lung.</i> <b>Scientific Reports</b>. 10(1): 11290 (2020).<br>
+                  </p>
+                  <p>
+                    Wang, X., Hennig, T., Whisnant, A.W., Erhard, F., Friedel, C.C., Forouzmand, E., Hu, W., Erber, L., Chen, Y., Sandri-Goldin, R., Dölken, L., Shi, Y. <i>Herpes simplex virus blocks host transcription termination via the bimodal activities of ICP27.</i> <b>Nature Communications</b>. 11, 293 (2020).<br>
+                  </p>
+                  <p>
+                    Luo, A., Chen, Y. <i>Label-Free Interactome Analysis Revealed an Essential Role of CUL3-KEAP1 Complex in Mediating the Ubiquitination and Degradation of PHD2.</i> <b>J. Proteome Res</b>. 19, 260-268 (2020).<br>
+                  </p>
+                  <p>
+                    Hauck, A. K., Zhou, T., Upadhyay, A., Sun, Y., O'Connor, M. B., Chen, Y., Bernlohr, D. A. <i>Histone Carbonylation Is a Redox-Regulated Epigenomic Mark That Accumulates with Obesity and Aging.</i> <b>Antioxidants</b> (Basel) 9(12) (2020).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2019</h5>
+                  <p>
+                    Chang, J.W., Yeh, H.S., Park, M., Erber, L., Sun, J., Cheng, S., Bui, A.M., Fahmi, N.A., Nasti, R., Kuang, R., Chen, Y., Zhang, W., Yong, J. <i>mTOR-regulated U2af1 tandem exon splicing specifies transcriptome features for translational control.</i> <b>Nucleic Acids Res</b>. 47(19):10373-10387 (2019).<br>
+                  </p>
+                  <p>
+                    Chen, Y. and Li, Y. <i>Site-specific Determination of Lysine Acetylation Stoichiometries on the Proteome-Scale.</i> <b>Methods Enzymology</b>, Benjamin Garcia (Eds). 626:115-132 (2019).<br>
+                  </p>
+                  <p>
+                    Erber, L., Luo, A. and Chen, Y. <i>Targeted and Interactome Proteomics Revealed the Role of PHD2 in Regulating BRD4 Proline Hydroxylation.</i> <b>Mol. Cell. Proteomics</b> 18(9):1772-1781 (2019).<br>
+                  </p>
+                  <p>
+                    Seiler, C.L., Song, J.M., Fernandez, J., Abrahante, J.E., Kono, T., Chen, Y., Ren, Y., Kassie, F. and Tretyakova, N.Y. <i>Epigenetic Changes in Alveolar Type II Lung Cells of A/J Mice Following Intranasal Treatment with Lipopolysaccharide.</i> <b>Chem Res Toxicol</b>. 32(5): 831-839 (2019).<br>
+                  </p>
+                  <p>
+                    Li, Y., Evers, J., Luo, A., Erber, L., Postler, Z. and Chen, Y. <i>A Quantitative Chemical Proteomics Approach for Site-specific Stoichiometry Analysis of Ubiquitination.</i> <b>Angew Chem Int Ed Engl</b>. 58(2):537-541 (2019)
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2018</h5>
+                  <p>
+                    Hauck, A.K., Zhou, T., Hahn, W., Petegrosso, R., Kaung, R., Chen, Y. and Bernlohr, D.A. <i>Obesity-Induced Protein Carbonylation In Murine Adipose Tissue Regulates The DNA Binding Domain Of Nuclear Zinc-Finger Proteins.</i> <b>J. Biol. Chem.</b> 293(35):13464-13476 (2018)<br>
+                  </p>
+                  <p>
+                    Smestad J, Erber L, Chen Y and Maher LJ. <i>Chromatin Succinylation Correlates with Active Gene Expression and Is Perturbed by Defective TCA Cycle Metabolism.</i> <b>iScience</b> 2:63-75 (2018)<br>
+                  </p>
+                  <p>
+                    Brumbaugh J, Di Stefano B, Wang X, Borkent M, Forouzmand E, Clowers KJ, Ji F, Schwarz BA, Kalocsay M, Elledge SJ, Chen Y, Sadreyev RI, Gygi SP, Hu G, Shi Y and Hochedlinger K. Nudt21 <i>Controls Cell Fate by Connecting Alternative Polyadenylation to Chromatin Signaling.</i> <b>Cell</b> 172(1-2):106-120 (2018)<br>
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2017</h5>
+                  <p>
+                    Chen D, Tavana O, Chu B, Erber L, Chen Y, Baer R and Gu W. <i>NRF2 is a major target of ARF in p53-independent tumor suppression.</i> <b>Mol. Cell</b> 68(1):224-232 (2017)
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2016</h5>
+                  <p>
+                    Zhou, T., Erber, L., Liu, B., Gao, Y., Ruan, H.B. & Chen, Y. <i>Proteomic analysis reveals diverse proline hydroxylation-mediated oxygen-sensing cellular pathways in cancer cells.</i> <b>Oncotarget</b> 7, 79154-79169 (2016).<br>
+                  </p>
+                  <p>
+                    Fang, D., Gan, H., Lee, J.H., Han, J., Wang, Z., Riester, S.M., Jin, L., Chen, J., Zhou, H., Wang, J., Zhang, H., Yang, N., Bradley, E.W., Ho, T.H., Rubin, B.P., Bridge, J.A., Thibodeau, S.N., Ordog, T., Chen, Y., van Wijnen, A.J., Oliveira, A.M., Xu, R.M., Westendorf, J.J., Zhang, Z. <i>The histone H3.3K36M mutation reprograms the epigenome of chondroblastomas.</i> <b>Science</b> 352(6291):1344-1348 (2016)<br>
+                  </p>
+                  <p>
+                    Chen, Y. <i>Quantitative Analysis of the Sirt5-Regulated Lysine Succinylation Proteome in Mammalian Cells.</i> <b>Methods Molecular Biology</b>, Vol. 1410, Salvatore Sechi (Eds.) (2016)<br>
+                  </p>
+                  <p>
+                    Wang, S., Li, D., Ou, Y., Jiang, L., Chen, Y., Zhao, Y., Gu, W., <i>Acetylation Is Crucial for p53-Mediated Ferroptosis and Tumor Suppression.</i> <b>Cell Reports</b> 17(2): 366-373 (2016)<br>
+                  </p>
+                  <p>
+                    Liu, K., Li, F., Han, H., Chen, Y., Mao, Z., Luo, J., Zhao, Y., Zheng, B., Gu, W., Zhao, W. <i>Parkin Regulates the Activity of Pyruvate Kinase M2.</i> <b>J. Biol. Chem.</b> 291(19):10307-10317 (2016)<br>
+                  </p>
+                  <p>
+                    Xie, Z., Zhang, D., Chung, D., Tang, Z., Huang, H., Dai, L., Qi, S., Li, J., Colak, G., Chen, Y., Xia, C., Peng, C., Ruan, H., Kirkey, M., Wang, D., Jensen, L.M., Kwon, O.K., Lee, S., Pletcher, S.D., Tan, M., Lombard, D.B., White, K.P., Zhao, H., Li, J., Roeder, R.G., Yang, X., Zhao, Y. <i>Metabolic Regulation of Gene Expression by Histone Lysine β-Hydroxybutyrylation.</i> <b>Mol. Cell</b> 62(2):194-206 (2016)<br>
+                  </p>
+                  <p>
+                    Zhou, T., Chung, Y., Chen, J. & Chen, Y., <i>Site-specific Identification of Lysine Acetylation Stoichiometries in Mammalian Cells.</i> <b>J Proteome Res</b> 15, 1103-1113. (2016)
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2015</h5>
+                  <p>
+                    Head, S.A., Shi, W., Zhao, L., Gorshkov, K., Pasunooti, K., Chen, Y., Deng, Z., Li, R.J., Shim, J.S., Tan, W., Hartung, T., Zhang, J., Zhao, Y., Colombini, M., Liu, J.O. <i>Antifungal drug itraconazole targets VDAC1 to modulate the AMPK/mTOR signaling axis in endothelial cells.</i> <b>Proc Natl Acad Sci U S A</b> 112, E7276–E7285 (2015).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2014</h5>
+                  <p>
+                    Tang, S., Huang, G., Fan, W., Chen, Y., Ward, J.M., Xu, X., Xu, Q., Kang, A., McBurney, M.W., Fargo, D.C., Hu, G., Baumgart-Vogt, E., Zhao, Y., Li, X. <i>SIRT1-Mediated Deacetylation of CRABPII Regulates Cellular Retinoic Acid Signaling and Modulates Embryonic Stem Cell Differentiation.</i> <b>Cell</b> 55, 843-855 (2014).<br>
+                  </p>
+                  <p>
+                    Tan, M., Peng, C., Anderson, K.A., Chhoy, P., Xie, Z., Dai, L., Park, J., Chen, Y., Huang, H., Zhang, Y., Ro, J., Wagner, G.R., Green, M.F., Madsen, A.S., Schmiesing, J., Peterson, B.S., Xu, G., Ilkayeva, O.R., Muehlbauer, M.J., Braulke, T., Mühlhausen, C., Backos, D.S., Olsen, C.A., McGuire, P.J., Pletcher, S.D., Lombard, D.B., Hirschey, M.D. & Zhao, Y. <i>Lysine glutarylation is a protein posttranslational modification regulated by SIRT5.</i> <b>Cell Metab</b> 19, 605-617 (2014).<br>
+                  </p>
+                  <p>
+                    Dai, L., Peng, C., Montellier, E., Lu, Z., Chen, Y., Ishii, H., Debernardi, A., Buchou, T., Rousseaux, S., Jin, F., Sabari, B.R., Deng, Z., Allis, C.D., Ren, B., Khochbin, S. & Zhao, Y. <i>Lysine 2-hydroxyisobutyrylation is a widely distributed active histone mark.</i> <b>Nat Chem Biol</b> 10, 365-370 (2014).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2013</h5>
+                  <p>
+                    Park, J.#, Chen, Y.#, Tishkoff, D.X., Peng, C., Tan, M., Dai, L., Xie, Z., Zhang, Y., Zwaans, B.M.M., Skinner, M.E., Lombard, D.B. & Zhao, Y. <i>Sirt5-mediated Lys desuccinylation regulates diverse metabolic pathways.</i> <b>Mol Cell</b> 50, 919-930 (2013) (# equal contribution).<br>
+                  </p>
+                  <p>
+                    Colak, G., Xie, Z., Zhu, A.Y., Dai, L., Lu, Z., Zhang, Y., Wan, X., Chen, Y., Cha, Y.H., Lin, H., Zhao, Y. & Tan, M. <i>Identification of lysine succinylation substrates and the succinylation regulatory enzyme CobB in Escherichia coli.</i> <b>Mol Cell Proteomics</b> 12, 3509-3520 (2013).<br>
+                  </p>
+                  <p>
+                    Chen, Y., Colak, G. & Zhao, Y. <i>SILAC-based quantification of Sirt1-response Lys acetylome.</i> In M. Hirshey (Ed.) <b>Methods Mol Biol., Sirtuin Ed.</b> 1077, 105-120 (2013).<br>
+                  </p>
+                  <p>
+                    Dobbin, M.M., Madabhushi, R., Pan, L., Chen, Y., Kim, D., Gao, J., Ahanonu, B., Pao, P.C., Qiu, Y., Zhao, Y. & Tsai, L.H. <i>SIRT1 collaborates with ATM and HDAC1 to maintain genomic stability in neurons.</i> <b>Nat Neurosci</b> 8, 1008-1015 (2013).<br>
+                  </p>
+                  <p>
+                    Lee, S.*, Tan, M., Dai, L., Kwon, O.K., Yang, J., Zhao, Y. & Chen, Y.* <i>MS/MS of synthetic peptide is not sufficient to confirm new types of protein modifications.</i> <b>J Proteome Res</b> 12, 1007-1013 (2013) (* corresponding authors).<br>
+                  </p>
+                  <p>
+                    Liao, B., Zhong, X., Xu, H., Xiao, F., Fang, Z., Gu, J., Chen, Y., Zhao, Y. & Jin, Y. <i>Itch, an e3 ligase of Oct4, is required for embryonic stem cell self-renewal and pluripotency induction.</i> <b>J Cell Physiol</b> 228, 1443-1451 (2013).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2012</h5>
+                  <p>
+                    Chen, Y., Zhao, W., Yang, J.S., Cheng, Z., Luo, H., Lu, Z., Tan, M., Gu, W. & Zhao, Y. <i>Quantitative acetylome analysis reveals the roles of SIRT1 in regulating diverse substrates and cellular pathways.</i> <b>Mol Cell Proteomics</b> 11, 1048-1062 (2012).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2011</h5>
+                  <p>
+                    Peng, C., Lu, Z., Xie, Z., Cheng, Z., Chen, Y., Tan, M., Luo, H., Zhang, Y., He, W., Yang, K., Zwaans, B.M., Tishkoff, D., Ho, L., Lombard, D., He, T.C., Dai, J., Verdin, E., Ye, Y. & Zhao, Y. <i>The first identification of lysine malonylation substrates and its regulatory enzyme.</i> <b>Mol Cell Proteomics</b> 10, M111.012658 (2011).<br>
+                  </p>
+                  <p>
+                    Lu, J.Y., Lin, Y.Y., Sheu, J.C., Wu, J.T., Lee, F.J., Chen, Y., Lin, M.I., Chiang, F.T., Tai, T.Y., Berger, S.L., Zhao, Y., Tsai, K.S., Zhu, H., Chuang, L.M. & Boeke, J.D. <i>Acetylation of yeast AMPK controls intrinsic aging independently of caloric restriction.</i> <b>Cell 146, 969-979</b> (2011).<br>
+                  </p>
+                  <p>
+                    Zhang, Z., Tan, M., Xie, Z., Dai, L., Chen, Y. & Zhao, Y. <i>Identification of lysine succinylation as a new post-translational modification.</i> <b>Nat Chem Biol</b> 7, 58-63 (2011).<br>
+                  </p>
+                  <p>
+                    Song, H., Li, C.W., Labaff, A.M., Lim, S.O., Li, L.Y., Kan, S.F., Chen, Y., Zhang, K., Lang, J., Xie, X., Wang, Y., Huo, L.F., Hsu, S.C., Chen, X., Zhao, Y. & Hung, M.C. <i>Acetylation of EGF receptor contributes to tumor cell resistance to histone deacetylase inhibitors.</i> <b>Biochem Biophys Res Commun</b> 404, 68-73 (2011).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2010</h5>
+                  <p>
+                    Lee, S., Chen, Y., Luo, H., Wu, A.A., Wilde, M., Schumacker, P.T. & Zhao, Y. <i>The first global screening of protein substrates bearing protein-bound 3,4-Dihydroxyphenylalanine in Escherichia coli and human mitochondria.</i> <b>J Proteome Res</b> 9, 5705-5714 (2010).<br>
+                  </p>
+                  <p>
+                    Zhang, K., Chen, Y., Zhang, Z., Tao, S., Zhu, H. & Zhao, Y. <i>Unrestrictive identification of non-phosphorylation PTMs in yeast kinases by MS and PTMap.</i> <b>Proteomics</b> 10, 896-903 (2010).<br>
+                  </p>
+                  <p>
+                    Zhang, J., Chen, Y., Zhang, Z., Xing, G., Wysocka, J. & Zhao, Y. <i>MS/MS/MS reveals false positive identification of histone serine methylation.</i> <b>J Proteome Res</b> 9, 585-594 (2010).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2009</h5>
+                  <p>
+                    Chen, Y., Chen, W., Cobb, M.H. & Zhao, Y. <i>PTMap–a sequence alignment software for unrestricted, accurate, and full-spectrum identification of post-translational modification sites.</i> <b>Proc Natl Acad Sci U S A</b> 106, 761-766 (2009).<br>
+                  </p>
+                  <p>
+                    Zhang, K., Chen, Y., Zhang, Z. & Zhao, Y. <i>Identification and verification of lysine propionylation and butyrylation in yeast core histones using PTMap software.</i> <b>J Proteome Res</b> 8, 900-906 (2009).<br>
+                  </p>
+                  <p>
+                    Cheng, Z., Tang, Y., Chen, Y., Kim, S., Liu, H., Li, S.S., Gu, W. & Zhao, Y. <i>Molecular characterization of propionyllysines in non-histone proteins.</i> <b>Mol Cell Proteomics</b> 8, 45-52 (2009).<br>
+                  </p>
+                  <p>
+                    Chen, Y., Zhang, J., Xing, G. & Zhao, Y. <i>Mascot-derived false positive peptide identifications revealed by manual analysis of tandem mass spectra.</i> <b>J Proteome Res</b> 8, 3141-3147 (2009).<br>
+                  </p>
+                  <p>
+                    Chen, W., Chen, Y., Xu, B.E., Juang, Y.C., Stippec, S., Zhao, Y. & Cobb, M.H. <i>Regulation of a third conserved phosphorylation site in SGK.</i> <b>J Biol Chem</b> 284, 3453-3460 (2009).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2008</h5>
+                  <p>
+                    Tang, Y., Zhao, W., Chen, Y., Zhao, Y. & Gu, W. Acetylation is indispensable for p53 activation. Cell 133, 612-626 (2008).<br>
+                  </p>
+                  <p>
+                    Xing, G., Zhang, J., Chen, Y. & Zhao, Y. <i>Identification of four novel types of in vitro protein modifications.</i> <b>J Proteome Res</b> 7, 4603-4608 (2008).<br>
+                  </p>
+                  <p>
+                    Sprung, R., Chen, Y., Zhang, K., Cheng, D., Zhang, T., Peng, J. & Zhao, Y. <i>Identification and validation of eukaryotic aspartate and glutamate methylation in proteins.</i> <b>J Proteome Res</b> 7, 1001-1006 (2008).<br>
+                  </p>
+                  <p>
+                    Jung, S.Y., Li, Y., Wang, Y., Chen, Y., Zhao, Y. & Qin, J. <i>Complications in the assignment of 14 and 28 Da mass shift detected by mass spectrometry as in vivo methylation from endogenous proteins.</i> <b>Anal Chem</b> 80, 1721-1729 (2008).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2007</h5>
+                  <p>
+                    Chen, Y., Sprung, R., Tang, Y., Ball, H., Sangras, B., Kim, S.C., Falck, J.R., Peng, J., Gu, W. & Zhao, Y. <i>Lysine propionylation and butyrylation are novel post-translational modifications in histones.</i> <b>Mol Cell Proteomics</b> 6, 812-819 (2007).<br>
+                  </p>
+                  <p>
+                    Chang, B., Chen, Y., Zhao, Y. & Bruick, R.K. <i>JMJD6 is a histone arginine demethylase.</i> <b>Science</b> 318, 444-447 (2007).<br>
+                  </p>
+                  <p>
+                    Lee, J., Xu, Y., Chen, Y., Sprung, R., Kim, S.C., Xie, S. & Zhao, Y. <i>Mitochondrial phosphoproteome revealed by an improved IMAC method and MS/MS/MS.</i> <b>Mol Cell Proteomics</b> 6, 669-676 (2007).<br>
+                  </p>
+                  <p>
+                    Kang, J., Chen, Y., Zhao, Y. & Yu, H. <i>Autophosphorylation-dependent activation of human Mps1 is required for the spindle checkpoint.</i> <b>Proc Natl Acad Sci U S A</b> 104, 20232-20237 (2007).<br>
+                  </p>
+                  <p>
+                    Ganesan, A.K., Kho, Y., Kim, S.C., Chen, Y., Zhao, Y. & White, M.A. <i>Broad spectrum identification of SUMO substrates in melanoma cells.</i> <b>Proteomics</b> 7, 2216-2221 (2007).<br>
+                  </p>
+                  <p>
+                    Bartz, R., Zehmer, J.K., Zhu, M., Chen, Y., Serrero, G., Zhao, Y. & Liu, P. <i>Dynamic activity of lipid droplets: protein phosphorylation and GTP-mediated protein translocation.</i> <b>J Proteome Res</b> 6, 3256-3265 (2007).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2006</h5>
+                  <p>
+                    Kim, S.C., Sprung, R., Chen, Y., Xu, Y., Ball, H., Pei, J., Cheng, T., Kho, Y., Xiao, H., Xiao, L., Grishin, N.V., White, M., Yang, X.J. & Zhao, Y. <i>Substrate and functional diversity of lysine acetylation revealed by a proteomics survey.</i> <b>Mol Cell</b> 23, 607-618 (2006).<br>
+                  </p>
+                  <p>
+                    Qiu, Y., Zhao, Y., Becker, M., John, S., Parekh, B.S., Huang, S., Hendarwanto, A., Martinez, E.D., Chen, Y., Lu, H., Adkins, N.L., Stavreva, D.A., Wiench, M., Georgel, P.T., Schiltz, R.L. & Hager, G.L. <i>HDAC1 acetylation is linked to progressive modulation of steroid receptor-induced gene transcription.</i> <b>Mol Cell</b> 22, 669-679 (2006).<br>
+                  </p>
+                  <p>
+                    Kim, S.C., Chen, Y., Mirza, S., Xu, Y., Lee, J., Liu, P. & Zhao, Y. <i>A clean, more efficient method for in-solution digestion of protein mixtures without detergent or urea.</i> <b>J Proteome Res</b> 5, 3446-3452 (2006).<br>
+                  </p>
+                  <p>
+                    Binns, D., Januszewski, T., Chen, Y., Hill, J., Markin, V.S., Zhao, Y., Gilpin, C., Chapman, K.D., Anderson, R.G. & Goodman, J.M. <i>An intimate collaboration between peroxisomes and lipid bodies.</i> <b>J Cell Biol</b> 173, 719-731 (2006).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2005</h5>
+                  <p>
+                    Chen, Y., Kwon, S.W., Kim, S.C. & Zhao, Y. <i>Integrated approach for manual evaluation of peptides identified by searching protein sequence databases with tandem mass spectra.</i> <b>J Proteome Res</b> 4, 998-1005 (2005).<br>
+                  </p>
+                  <p>
+                    Zhi, G., Ryder, J.W., Huang, J., Ding, P., Chen, Y., Zhao, Y., Kamm, K.E. & Stull, J.T. <i>Myosin light chain kinase and myosin phosphorylation effect frequency-dependent potentiation of skeletal muscle contraction.</i> <b>Proc Natl Acad Sci U S A</b> 102, 17519-17524 (2005).<br>
+                  </p>
+                  <p>
+                    Sprung, R., Nandi, A., Chen, Y., Kim, S.C., Barma, D., Falck, J.R. & Zhao, Y. <i>Tagging-via-substrate strategy for probing O-GlcNAc modified proteins.</i> <b>J Proteome Res</b> 4, 950-957 (2005).<br>
+                  </p>
+                  <p>
+                    Chen, Y., Kim, S.C. & Zhao, Y. <i>High-throughput identification of in-gel digested proteins by rapid, isocratic HPLC/MS/MS.</i> <b>Anal Chem</b> 77, 8179-8184 (2005).
+                  </p>
+                </div>
+              </div>
+              <div class="col box">
+                <div class="p-2">
+                  <h5 class="fw-bold">2004</h5>
+                  <p>
+                    Geiman, T.M., Sankpal, U.T., Robertson, A.K., Chen, Y., Mazumdar, M., Heale, J.T., Schmiesing, J.A., Kim, W., Yokomori, K., Zhao, Y. & Robertson, K.D. <i>Isolation and characterization of a novel DNA methyltransferase complex linking DNMT3B with components of the mitotic chromosome condensation machinery.</i> <b>Nucleic Acids Res</b> 32, 2716-2729 (2004).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- Contact Us -->
+  <div class="modal fade" id="ContactUs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          PUT INFO HERE
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- Research -->
+  <div class="modal fade" id="Research" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Research</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-bottom">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Assets/Research/fig-1-1.jpg" alt="fig-1-1">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Research</h1>
+                <p>Post-translational modifications of proteins (PTMs) profoundly impact the substrates’ structure, activity and protein-protein interactions. Dysregulation of the PTM pathways has been widely implicated in a variety of cellular processes and diseases including cancer, aging and metabolic diseases. Over 200 different types of PTMs have been identified and yet, functional significance of these PTM pathways in cells and disease progression remain largely unexplored. A key challenge is the lack of effective technologies to comprehensively characterize the PTM proteome and accurately quantify the site-specific dynamics of PTM targets in cellular processes. The Chen lab develops functional proteomics technologies to systematically identify novel PTM regulatory targets and discover aberrantly regulated PTM pathways in different disease states.</p>
+                </div>
+              </div><br>
+
+              <div>
+                <h5 class="lead fw-bold">1. Quantitative chemical proteomics technology to study lysine modification pathways.</h5><br>
+                <img src="Assets/Research/fig-2.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="fig-2">
+                <p>Lysine is an important target of protein modifications playing key roles in the epigenetic regulation, cell signaling and protein degradation. Lysine acetylation is an ancient protein modification first discovered in 1963. Recently, the MS-based global analysis of lysine acetylation proteome revealed multi-faceted roles of lysine acetylation in regulating gene transcription, enzyme activity and cellular metabolism. Based on the success of this technology platform, we are combining quantitative proteomics technology to identify lysine acetylation targets of the regulatory enzymes or the dynamics of lysine acetylation proteome in different disease states. We are also developing new chemical proteomics strategies to determine absolute site-specific lysine acetylation stoichiometry in cells and tissues and investigate the roles of lysine acetylation in protein homeostasis.</p>
+              </div><br>
+              
+              <div>
+                <h5 class="lead fw-bold">2. Environmental impacts on cell signaling and epigenetics.</h5><br>
+                <img src="Assets/Research/fig-3.jpg" class="col-md-6 float-md-start mb-3 ms-md-3" alt="fig-3">
+                <p>Changes in the cell microenvironment including oxygen availability, nutrient concentrations and the existence of the chemically active compounds may dramatically alter the cellular metabolism, epigenetic regulation and signaling pathways. Such processes have been widely implicated in cancer initiation and proliferation. During these processes, cells activate specific signaling cascades through posttranslational modifications which eventually lead to the epigenetic reprogramming of the gene transcriptions. Understanding the dynamics of these signaling events is critical to discover novel regulatory mechanisms and pathways that are functionally essential in these processes. We are applying the MS-based quantitative proteomics technology to systematically identify the temporal and spatial dynamics of the signaling networks in cancer cells in response to the environmental perturbations with an ultimate goal to reveal novel targets for therapeutic intervention of tumorigenesis and tumor progression.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- Members -->
+  <div class="modal fade" id="Members" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Members</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+        
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Dr. Yue Chen.jpg" class="card-img-top" alt="Dr. Yue Chen">
+                    <div class="card-body">
+                      <h5 class="card-title">Dr. Yue Chen</h5>
+                      <h6 class="card-subtitle">Associate Professor<br>Ph.D. University of Texas at Arlington, Arlington<br>Postdoc. University of Chicago, Chicago</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Yao Gong.jpg" class="card-img-top" alt="Yao Gong">
+                    <div class="card-body">
+                      <h5 class="card-title">Yao Gong</h5>
+                      <h6 class="card-subtitle">Graduate Student<br>B.S. Peking University, Beijing</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Yi-Cheng Sin.jpg" class="card-img-top" alt="Yi-Cheng Sin">
+                    <div class="card-body">
+                      <h5 class="card-title">Yi-Cheng Sin</h5>
+                      <h6 class="card-subtitle">Graduate Student<br>B.S. National Chung Hsing University, Taichung<br>M.S. National Taiwan University, Taipei</h6>
+                      <div class="d-flex justify-content-between align-items-center">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Haiping Ouyang.png" class="card-img-top" alt="Haiping Ouyang">
+                    <div class="card-body">
+                      <h5 class="card-title">Haiping Ouyang</h5>
+                      <h6 class="card-subtitle">Graduate Student<br>B.S. Guangdong Medical University, Zhanjiang<br>M.S. Guangdong Medical University, Guangzhou</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Yunan Li.jpg" class="card-img-top" alt="Yunan Li">
+                    <div class="card-body">
+                      <h5 class="card-title">Yunan Li</h5>
+                      <h6 class="card-subtitle">Research Associate<br>B.S. University of Minnesota, Twin Cities</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Gaurav Behera.jpg" class="card-img-top" alt="Gaurav Behera">
+                    <div class="card-body">
+                      <h5 class="card-title">Gaurav Behera</h5>
+                      <h6 class="card-subtitle">Undergraduate Research Assistant<br>University of Minnesota, Twin Cities, Biochemistry</h6>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Cindy How.jpg" class="card-img-top" alt="Cindy How">
+                    <div class="card-body">
+                      <h5 class="card-title">Cindy How</h5>
+                      <h6 class="card-subtitle">Undergraduate Research Assistant<br>University of Minnesota, Twin Cities, Biochemistry</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="Assets/Members/Blake Krisko.png" class="card-img-top" alt="Blake Krisko">
+                    <div class="card-body">
+                      <h5 class="card-title">Blake Krisko</h5>
+                      <h6 class="card-subtitle">Undergraduate Research Assistant<br>University of Minnesota, Twin Cities, Biochemistry</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <!-- News and Updates -->
+  <div class="modal fade" id="New&Updates" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">News & Updates</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+</div>
+<footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
