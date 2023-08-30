@@ -118,3 +118,10 @@ maybe sace out the letters in heading/increase size */
 .box{
     background-color: #f0efee;
 }
+/* Contact Us */
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
