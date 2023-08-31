@@ -120,8 +120,7 @@ maybe sace out the letters in heading/increase size */
 }
 /* Contact Us */
 .back-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    position: relative;
+    top: 0;
+    z-index: 1;
 }
