@@ -1,0 +1,126 @@
+#hexagon{
+    background-color: white; 
+}
+body{
+    background-color: white;
+    font-family: 'Handjet';
+    font-weight:bold;
+}
+
+
+/* try and center text in surrounding hexagons
+make middle hexagon less bold but still clear? 
+maybe sace out the letters in heading/increase size */
+
+/* THIS IS FOR 6 HEXAGONS SURROUNDING MIDDLE */
+
+.hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -26px;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.05s;
+    font-size: 6px;
+}
+.hex:hover {
+    transform: scale(1.1);
+}
+.hex .top {
+    width: 0;
+    border-bottom: 30px solid #eeee;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    margin-bottom: -1px;
+}
+.hex .middle {
+    width: 104px;
+    height: 60px;
+    background: #111;
+    margin-bottom: -1px;
+    border-radius: 3px;
+    font-size: 10px;
+    
+}
+.hex .bottom {
+    width: 0;
+    border-top: 30px solid #898;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+.hex-row {
+    clear: left;
+}
+.hex-row.even {
+    margin-left: 53px;
+}
+#hexGrid{
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    zoom: 1.9;
+    height: fit-content;
+}
+
+
+/* THIS IS FOR THE MIDDLE HEXAGON ONLY */ 
+.middle_hex {
+    float: left;
+    margin-left: 3px;
+    margin-bottom: -26px;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.05s;
+    font-size: 6px;
+}
+.middle_hex:hover {
+    transform: scale(1.1);
+}
+.middle_hex .top {
+    width: 0;
+    border-bottom: 30px solid #eeee;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    margin-bottom: -1px;
+}
+.middle_hex .middle {
+    width: 104px;
+    height: 60px;
+    background: #111;
+    margin-bottom: -1px;
+    border-radius: 3px;
+    font-size: 10px;
+    
+}
+.middle_hex .bottom {
+    width: 0;
+    border-top: 30px solid #898;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
+.middle_hex-row {
+    clear: left;
+}
+#evenRow{
+    margin-left: -3px;
+    transform: translate(60px);
+}
+
+#centercenterHex{
+    font-size:8.5px;
+}
+/* Home Screen */
+/* Publications */
+.box{
+    background-color: #f0efee;
+}
+/* Contact Us */
+.back-video{
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
