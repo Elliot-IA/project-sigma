@@ -1,10 +1,8 @@
 // Then import Bootstrap
 .BootstrapActive{
-    font-family: inherit;
-    font-size: inherit;
+    $hr-color: inherit;
+    $hr-border-color: inherit;
+
     @import "../node_modules/bootstrap/scss/bootstrap";
-    .modal{
-        @import "../node_modules/bootstrap/scss/modal";
-    }
 }
 
