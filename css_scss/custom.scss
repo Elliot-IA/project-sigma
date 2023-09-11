@@ -1,9 +1,5 @@
-// Variable overrides first
-$primary: #900;
-// $enable-shadows: true;
-$prefix: "mo-";
-// Then import Bootstrap
-.BootstrapActive{
-    @import "../node_modules/bootstrap/scss/bootstrap";
-}
 
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "Bootstrap_Custom.scss";

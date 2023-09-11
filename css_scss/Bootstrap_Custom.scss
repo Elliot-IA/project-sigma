@@ -1,0 +1,10 @@
+// Then import Bootstrap
+.BootstrapActive{
+    font-family: inherit;
+    font-size: inherit;
+    @import "../node_modules/bootstrap/scss/bootstrap";
+    .modal{
+        @import "../node_modules/bootstrap/scss/modal";
+    }
+}
+
