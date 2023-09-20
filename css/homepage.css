@@ -7,6 +7,7 @@ body{
   background-position: center;
 }
 /*#region HEXAGRID */
+/*#region Shapes,UI*/
 #hexGrid {
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +59,7 @@ body{
   }
 /*#endregion*/
 
-
-/*#region HEX CONTENT **********************************************************************/
+/*#region HEX CONTENT*/
   .hex img {
     left: -100%;
     right: -100%;
@@ -109,7 +109,7 @@ body{
   }
 /*#endregion*/ 
   
-/*#region HOVER EFFECT  **********************************************************************/
+/*#region HOVER EFFECT*/
   .hexLink:hover h1, .hexLink:focus h1,
   .hexLink:hover p, .hexLink:focus p{
     -webkit-transform:translate3d(0,0,0);
@@ -118,7 +118,7 @@ body{
   }
 /*#endregion*/  
   
-/*#region HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+/*#region HEXAGON SIZING AND EVEN ROW INDENTATION*/
   @media (min-width:1201px) { /* <- 5-4  hexagons per row */
     #hexGrid{
       padding-bottom: 4.4%
@@ -130,29 +130,44 @@ body{
       margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
     }
   }
+/*#endregion*/
+/*#endregion*/
+
+/*#region Bootstrap Tweaks*/
+.fw-bold{
+  color: $primary;
+  margin-bottom: 20px;
+}
+.modal-header{
+  background-color: #ffcc33;
+}
+.modal-header h1{
+  color: #7a0019
+}
+
+.card{
+  width: 18rem;
+}
+#cards{
+  width: 70%;
+}
+/*#endregion*/
 
 /*Homepage*/
 #Title{
   color: #ffcc33;
 }
+p b{ /* This turns all bolded text maroon*/
+  color: #7a0019;
+}
 
-/* Publications */
-.box{
+.box{/*Shades sections and boxes for publish/research modals*/
     background-color: #f0efee;
 }
 /* Contact Us */
 .back-video{
-  height: 422px;
-  width: 1200px;
   position: relative;
   top: 0;
   z-index: 1;
-  overflow: hidden;
-  margin-bottom: 100px;
 }
-/*News&Updates*/
-p b{
-  color: #7a0019;
-}
-
 /* Modals */

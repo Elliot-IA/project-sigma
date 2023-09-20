@@ -6,22 +6,6 @@ $hr-color: $primary;
 $hr-opacity: .75;
 $modal-header: $primary;
 $btn-close-color: $primary;
-.fw-bold{
-    color: $primary;
-    margin-bottom: 20px;
-}
-.modal-header{
-    background-color: #ffcc33;
-}
-.modal-header h1{
-    color: #7a0019
-}
 
-.card{
-    width: 18rem;
-}
-#cards{
-    width: 70%;
-}
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

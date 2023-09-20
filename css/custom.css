@@ -1,25 +1,4 @@
 @charset "UTF-8";
-.fw-bold {
-  color: #7a0019;
-  margin-bottom: 20px;
-}
-
-.modal-header {
-  background-color: #ffcc33;
-}
-
-.modal-header h1, .modal-header .h1 {
-  color: #7a0019;
-}
-
-.card {
-  width: 18rem;
-}
-
-#cards {
-  width: 70%;
-}
-
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
