@@ -17,12 +17,17 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     list-style-type: none;
+    padding-bottom: 4.4%
   }
   
   .hex {
     position: relative;
     visibility:hidden;
     outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    width: 25%;
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:12.5%;
   }
   .hex::after{
     content:'';
@@ -119,17 +124,7 @@ body{
 /*#endregion*/  
   
 /*#region HEXAGON SIZING AND EVEN ROW INDENTATION*/
-  @media (min-width:1201px) { /* <- 5-4  hexagons per row */
-    #hexGrid{
-      padding-bottom: 4.4%
-    }
-    .hex {
-      width: 25%; /* = 100 / 5 */
-    }
-    .hex:nth-child(7n+5){ /* first hexagon of even rows */
-      margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
-    }
-  }
+
 /*#endregion*/
 /*#endregion*/
 
