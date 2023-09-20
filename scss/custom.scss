@@ -1,5 +1,15 @@
 // Variable overrides first
+// Colors: #7a0019, #ffcc33
 $primary: #7a0019;
-$secondary: #ffcc33;
+$secondary: #7a0019;
+$hr-color: #7a0019;
+$hr-opacity: .75;
+$modal-header: $primary;
+.modal-header{
+    background-color: #ffcc33;
+}
+.modal-header h1{
+    color: #7a0019
+}
 // Then import Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
